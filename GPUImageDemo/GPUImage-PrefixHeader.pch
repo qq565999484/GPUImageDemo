@@ -1,0 +1,26 @@
+//
+//  GPUImage-PrefixHeader.pch
+//  GPUImageDemo
+//
+//  Created by chenyh on 16/7/4.
+//  Copyright © 2016年 chenyh. All rights reserved.
+//
+
+#ifndef GPUImage_PrefixHeader_pch
+#define GPUImage_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+
+#import "GPUImage.h"
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"[函数名:%s]\n" "[行号:%d] \n" fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+
+#define  WC __unsafe_unretained typeof(self) weakSelf = self
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* GPUImage_PrefixHeader_pch */
