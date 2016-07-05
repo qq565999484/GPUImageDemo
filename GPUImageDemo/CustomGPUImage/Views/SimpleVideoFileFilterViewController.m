@@ -563,6 +563,9 @@ static NSString *staticCell=@"CustomImageCell";
     [_filter addTarget:_movieWriter];
     //添加声音的
     
+    //软件注册权  9 个
+    
+    
     _movieWriter.shouldPassthroughAudio = YES;
     _movieWriter.delegate=self;
     //    [_movieWriter setHasAudioTrack:YES];
